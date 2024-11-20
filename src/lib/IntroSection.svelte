@@ -11,7 +11,7 @@
         </div>
     </div>
     <div class="image-part">
-        <img src="public/logo.png" alt="Alexis Marquez logo, an icon of a mountain forming an A and an M">
+        <img src="/logo.png" alt="Alexis Marquez logo, an icon of a mountain forming an A and an M">
     </div>
 </div>
 
@@ -58,8 +58,8 @@
             width: 100%;
         }
         .image-part img {
-            width: 100px;
-            height: 100px;
+            width: 200px;
+            height: 200px;
             object-fit: contain;
         }
     }
