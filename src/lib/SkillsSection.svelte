@@ -27,6 +27,7 @@
 <style>
     .skills-title, .skills-subtitle {
         color: #4ECDC4;
+        text-align: center;
     }
     .skills-title{
         font-size: 3rem;
@@ -45,8 +46,19 @@
         display: flex;
         flex-direction: column;
     }
+    .skills-list{
+        margin: 0.5vh;
+    }
     .skills-list-item, .skills-subtitle{
         font-size: 1.5rem;
-        margin: 0.5vh;
+        margin: 0.6vh;
+    }
+    @media (max-width: 768px){
+        .skills-list-item, .skills-subtitle{
+            font-size: 1rem;
+        }
+        .skills-title{
+            font-size: 1.5rem;
+        }
     }
 </style>

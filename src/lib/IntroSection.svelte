@@ -19,7 +19,7 @@
     .intro-main {
         display: flex;
         width: 90%;
-        margin: 12vh auto;
+        margin: 16vh auto 8vh;
     }
     .image-part {
         width: 50%;

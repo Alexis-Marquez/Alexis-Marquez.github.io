@@ -31,7 +31,7 @@
     .about-me-title{
         font-size: 5rem;
         color: #4ECDC4;
-        margin: 2.5vh;
+        margin: 3vh;
     }
     .about-me-section-header{
         display: flex;
@@ -46,6 +46,9 @@
     @media (max-width: 768px) {
         .about-me-title{
             font-size: 2rem;
+        }
+        .about-me-section-text{
+            font-size: 1rem;
         }
     }
 </style>
