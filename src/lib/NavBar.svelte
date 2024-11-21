@@ -1,13 +1,21 @@
+<script>
+    import AboutMeSection from "./AboutMeSection.svelte";
+    function scrollToSection(event, sectionId) {
+        event.preventDefault();
+        document.querySelector(sectionId).scrollIntoView({ behavior: "smooth" });
+    }
+</script>
+
 <nav>
     <div class="navbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" href="/">
+                <a class="nav-link active" href="#about-me-section" on:click="{(e) => scrollToSection(e, '#about-me-section')}">
                     <span class="nav-text">About Me</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="/">
+                <a class="nav-link active" href="#experience_section">
                     <span class="nav-text">Experience</span>
                 </a>
             </li>
@@ -43,7 +51,7 @@
     .nav-text{
         color: #1F2937;
         font-weight: bold;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .nav-text:hover {
         color: #E5E7EB;

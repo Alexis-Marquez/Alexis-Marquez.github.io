@@ -18,8 +18,8 @@
 <style>
     .intro-main {
         display: flex;
-        margin-top: 3rem;
-        width: 100%;
+        width: 90%;
+        margin: 12vh auto;
     }
     .image-part {
         width: 50%;
@@ -30,6 +30,7 @@
     .text-part {
         width: 50%;
         padding: 0 1rem;
+        z-index: -1;
     }
     .intro-text {
         width: 100%;
@@ -38,16 +39,21 @@
         position: relative;
     }
     .image-part img {
-        width: 350px;
-        height: 350px;
+        width: 375px;
+        height: 375px;
         object-fit: contain;
     }
     @media (max-width: 768px){
         .intro-text {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
         .intro-main{
             flex-direction: column;
+            margin: 4rem auto;
+        }
+        .image-part img{
+            width: 150px;
+            height: 150px;
         }
         .text-part {
             width: 100%;
