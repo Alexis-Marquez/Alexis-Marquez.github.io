@@ -1,12 +1,29 @@
+<script>
+    import {onMount} from "svelte";
+
+    const text = "Hi! \n My name is \n Alexis Marquez,\n a Computer Science Student and Aspiring Developer"
+
+    let displayText = '';
+
+    let charIndex = 0;
+
+    function type(){
+        if(charIndex < text.length){
+            displayText += text[charIndex];
+            charIndex++;
+            setTimeout(type, 75)
+        }
+    }
+    onMount(()=>{
+        type();
+    });
+</script>
+
 <div class="intro-main">
     <div class="text-part">
         <div class="intro-text">
-            <span>
-                Hi!<br>
-                My name is
-                Alexis Marquez,
-                a Computer
-                Science Student and Aspiring Developer
+            <span id="container">
+                {displayText}
             </span>
         </div>
     </div>
@@ -20,6 +37,7 @@
         display: flex;
         width: 90%;
         margin: 16vh auto 8vh;
+        min-height: 72vh;
     }
     .image-part {
         width: 50%;
@@ -43,6 +61,9 @@
         height: 375px;
         object-fit: contain;
     }
+    #container{
+        white-space: pre-wrap;
+    }
     @media (max-width: 768px){
         .intro-text {
             font-size: 1.5rem;
@@ -50,6 +71,7 @@
         .intro-main{
             flex-direction: column;
             margin: 4rem auto;
+            min-height: auto;
         }
         .image-part img{
             width: 150px;
