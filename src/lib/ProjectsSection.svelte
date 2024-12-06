@@ -3,7 +3,7 @@
     import {opacityScroll} from "./opacityScroll.ts";
 </script>
 
-<div use:opacityScroll={{ scrollFactor: 2, scrollOffset: window.innerHeight*2}} id="projects_section">
+<div use:opacityScroll={{ scrollFactor: 2, scrollOffset: window.innerHeight*2.5}} id="projects_section">
     <div class="projects-section-header">
         <h1 class="projects-title">Projects</h1>
     </div>
