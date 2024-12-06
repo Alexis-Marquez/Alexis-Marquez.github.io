@@ -20,7 +20,7 @@
                 </a>
             </li>
             <li class="nav-item ">
-            <a class="nav-link active" href="#project_section">
+            <a class="nav-link active" href="#projects_section">
                 <span class="nav-text">Projects</span>
             </a>
             </li>
@@ -37,6 +37,7 @@
         display: flex;
         justify-content: center;
         background: #4ECDC4;
+        z-index: 100;
     }
     .navbar-nav{
         display: flex;

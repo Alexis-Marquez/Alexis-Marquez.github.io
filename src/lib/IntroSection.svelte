@@ -1,5 +1,6 @@
 <script>
     import {onMount} from "svelte";
+    import {opacityScroll} from "./opacityScroll.ts";
 
     const text = "Hi! \n My name is \n Alexis Marquez,\n a Computer Science Student and Aspiring Developer"
 
@@ -11,7 +12,7 @@
         if(charIndex < text.length){
             displayText += text[charIndex];
             charIndex++;
-            setTimeout(type, 75)
+            setTimeout(type, 100)
         }
     }
     onMount(()=>{
@@ -19,7 +20,7 @@
     });
 </script>
 
-<div class="intro-main">
+<div use:opacityScroll={{ scrollFactor: 2, scrollOffset: 0 }} class="intro-main" >
     <div class="text-part">
         <div class="intro-text">
             <span id="container">
@@ -34,10 +35,12 @@
 
 <style>
     .intro-main {
+        z-index: 100;
         display: flex;
         width: 90%;
         margin: 16vh auto 8vh;
         min-height: 72vh;
+        transition: opacity 0.1s;
     }
     .image-part {
         width: 50%;
@@ -64,6 +67,7 @@
     #container{
         white-space: pre-wrap;
     }
+
     @media (max-width: 768px){
         .intro-text {
             font-size: 1.5rem;

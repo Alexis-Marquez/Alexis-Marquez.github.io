@@ -1,8 +1,9 @@
 <script>
     import SkillsList from "./SkillsSection.svelte";
+    import {opacityScroll} from "./opacityScroll.ts";
 </script>
 
-<div id="about-me-section">
+<div use:opacityScroll={{ scrollFactor: 2, scrollOffset: window.innerHeight}} id="about-me-section">
     <hr class="sep-line">
     <div class="about-me-section-header">
     <h1 class="about-me-title">About Me</h1>
