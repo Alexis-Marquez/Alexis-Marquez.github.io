@@ -20,7 +20,7 @@
                 </a>
             </li>
             <li class="nav-item ">
-            <a class="nav-link active" href="#projects_section">
+            <a class="nav-link active" href="#projects_section" on:click="{(e) => scrollToSection(e, '#projects_section')}">
                 <span class="nav-text">Projects</span>
             </a>
             </li>

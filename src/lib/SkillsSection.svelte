@@ -30,7 +30,7 @@
         text-align: center;
     }
     .skills-title{
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     .skills-section{
         display: flex;
@@ -50,7 +50,7 @@
         margin: 0.5vh;
     }
     .skills-list-item, .skills-subtitle{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin: 0.6vh;
     }
     @media (max-width: 768px){

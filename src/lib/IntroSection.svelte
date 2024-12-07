@@ -1,6 +1,7 @@
 <script>
     import {onMount} from "svelte";
     import {opacityScroll} from "./opacityScroll.ts";
+    import ContactInfo from "./ContactInfo.svelte";
 
     const text = "Hi! \n My name is \n Alexis Marquez,\n a Computer Science Student and Aspiring Developer"
 
@@ -20,7 +21,7 @@
     });
 </script>
 
-<div use:opacityScroll={{ scrollFactor: 2, scrollOffset: 0 }} class="intro-main" >
+<div use:opacityScroll={{ scrollFactor: 0.7, scrollOffset: 0 }} class="intro-main" >
     <div class="text-part">
         <div class="intro-text">
             <span id="container">
@@ -30,6 +31,7 @@
     </div>
     <div class="image-part">
         <img src="/logo.png" alt="Alexis Marquez logo, an icon of a mountain forming an A and an M">
+        <ContactInfo></ContactInfo>
     </div>
 </div>
 
@@ -47,6 +49,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
     .text-part {
         width: 50%;

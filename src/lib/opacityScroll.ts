@@ -1,30 +1,15 @@
 export function opacityScroll(node, options = { scrollFactor: 1, scrollOffset: 0 }) {
-    let opacity = 1;
-    let isVisible = false;
+    let opacity = 0;
 
     const handleScroll = () => {
-        if (!isVisible) return;
-
         const scrollY = window.scrollY;
         const screenHeight = window.innerHeight;
-
-        opacity = Math.max(0, 1 - (scrollY - options.scrollOffset) / screenHeight * options.scrollFactor);
-
+        opacity =  Math.max(0, 1 - (scrollY - options.scrollOffset) / (screenHeight * options.scrollFactor));
+        // if (scrollY < options.scrollOffset) {
+        //     opacity = Math.min(1, (scrollY - options.scrollOffset + screenHeight * options.scrollFactor) / (screenHeight * options.scrollFactor));
+        // }
         node.style.opacity = opacity;
     };
-
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                isVisible = entry.isIntersecting;
-            });
-        },
-        {
-            threshold: 0.5,
-        }
-    );
-
-    observer.observe(node);
     window.addEventListener('scroll', handleScroll);
 
     return {

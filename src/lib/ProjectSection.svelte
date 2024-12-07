@@ -5,7 +5,10 @@
 </script>
 
 <div id="project_section">
+    <div class="project-header">
     <h1 class="project-title">{props.title}</h1>
+    <h1 class="project-subtitle">{props.subtitle}</h1>
+    </div>
     <hr class="sep-line">
     <ul class="project-tech">
         {#each techList as tech}
@@ -20,8 +23,19 @@
 </div>
 
 <style>
+    .project-header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .project-subtitle {
+        color: #4ECDC4;
+    }
     .project-title{
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+    .project-subtitle{
+        font-size: 1.6rem;
         margin: 1rem;
     }
     .sep-line {
@@ -42,7 +56,7 @@
         margin-right: 8px;
     }
     .tech-text{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         font-weight: bold;
         color: #4ECDC4;
     }
