@@ -14,15 +14,20 @@
                     <span class="nav-text">About Me</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#experience_section">
-                    <span class="nav-text">Experience</span>
-                </a>
-            </li>
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link active" href="#experience_section">-->
+<!--                    <span class="nav-text">Experience</span>-->
+<!--                </a>-->
+<!--            </li>-->
             <li class="nav-item ">
             <a class="nav-link active" href="#projects_section" on:click="{(e) => scrollToSection(e, '#projects_section')}">
                 <span class="nav-text">Projects</span>
             </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/Marquez_Alexis_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <span class="nav-text">Resume</span>
+                </a>
             </li>
         </ul>
     </div>
