@@ -1,6 +1,6 @@
 # My Personal Portfolio
 
-Welcome to my personal portfolio! This website showcases my projects, skills, and professional journey. It was built using [Svelte](https://svelte.dev), a modern JavaScript framework, and is hosted on [GitHub Pages](https://pages.github.com/).
+Welcome to my personal portfolio! This website showcases my projects, skills, and professional journey. It was built using [Svelte](https://svelte.dev) and is hosted on [GitHub Pages](https://pages.github.com/).
 
 ## Features
 - **Responsive Design**: Optimized for all devices (mobile, tablet, desktop).
