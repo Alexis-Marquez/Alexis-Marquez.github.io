@@ -45,7 +45,7 @@
     </div>
     {#if showPlanned}
         <div id="plannedProjectsSection" transition:fly="{{ y: 20, duration: 400 }}">
-    <ProjectSection  title="Job Application tracker" subtitle="Full Stack Web Development">
+    <ProjectSection  title="Job Application tracker" subtitle="Full Stack Web Development" description={["Coming soon"]} tech= {["Python", "Django", "SQL Lite", "SvelteKit"]}>
     </ProjectSection>
         </div>
     {/if}

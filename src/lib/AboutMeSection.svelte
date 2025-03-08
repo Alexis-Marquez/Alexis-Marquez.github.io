@@ -3,10 +3,15 @@
     import {opacityScroll} from "./opacityScroll.ts";
 </script>
 
-<div use:opacityScroll={{ scrollFactor: 0.7, scrollOffset: window.innerHeight*1.5}} id="about-me-section">
+<div use:opacityScroll={{ scrollFactor: 0.7, scrollOffset: window.innerHeight*1.8}} id="about-me-section">
     <hr class="sep-line">
     <div class="about-me-section-header">
+        <div class="about-me-photo">
+            <img class="profile-photo" src="./PXL_20250308_202533335.PORTRAIT~3.jpg" alt="Profile photo"/>
+        </div>
+        <div class="About-me-section-title">
     <h1 class="about-me-title">About Me</h1>
+        </div>
     </div>
     <div class="about-me-section-body">
         <div class="about-me-section-text">
@@ -29,6 +34,19 @@
         width: 90%;
         margin: auto;
     }
+    .profile-photo{
+        width: 50%;
+        margin-left: 0;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        height: auto;
+        border-radius: 50%;
+    }
+    .about-me-photo{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
     .sep-line {
         border: none;
         border-top: 3px solid #ffffff;
@@ -42,7 +60,9 @@
     }
     .about-me-section-header{
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .about-me-section-text{
         width: 90%;
@@ -56,6 +76,9 @@
         }
         .about-me-section-text{
             font-size: 1rem;
+        }
+        .about-me-photo{
+            width: 100%
         }
     }
 </style>
