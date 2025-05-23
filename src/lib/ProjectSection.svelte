@@ -1,7 +1,11 @@
 <script>
+    import ImageCarousel from "./ImageCarousel.svelte";
+
     let props = $props();
     let list = props.description;
     let techList = props.tech;
+    let images = props.images;
+    let planned = props.planned;
 </script>
 
 <div id="project_section">
@@ -15,14 +19,24 @@
             <li class="tech-text">{tech}</li>
         {/each}
     </ul>
-    <ul class="project-description">
-        {#each list as des}
-            <li class="description-text">{des}</li>
-            {/each}
-    </ul>
+    <div class="project-content">
+            <ul class="project-description">
+                {#each list as des}
+                    <li class="description-text">{des}</li>
+                    {/each}
+            </ul>
+        {#if !planned}
+    <ImageCarousel class="carousel" photos={props.images} />
+            {/if}
+    </div>
 </div>
 
 <style>
+    .project-content {
+        display: flex;
+        min-height: 40vh;
+        justify-content: space-between;
+    }
     .project-header {
         width: 100%;
         display: flex;
@@ -62,6 +76,7 @@
     }
     .project-description{
         line-height: 2rem;
+        width: 60%;
     }
     .description-text{
         font-size: 1.2rem;
@@ -71,7 +86,19 @@
             font-size: 0.8rem;
         }
         .project-title{
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+        }
+        .project-subtitle{
+            font-size: .8rem;
+            margin-left: 0;
+        }
+        .project-content {
+            flex-direction: column;
+            height: auto;
+            align-items: center;
+        }
+        .project-description{
+            width: 100%;
         }
     }
 </style>

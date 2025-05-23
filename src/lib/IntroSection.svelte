@@ -3,7 +3,7 @@
     import {opacityScroll} from "./opacityScroll.ts";
     import ContactInfo from "./ContactInfo.svelte";
 
-    const text = "Hi! \n My name is \n Alexis Marquez,\n a Computer Science Student and Aspiring Developer"
+    const text = "Hi! \n My name is \n Alexis Marquez,\n Aspiring Software Developer"
 
     let displayText = '';
 
@@ -59,7 +59,7 @@
     .intro-text {
         width: 100%;
         text-align: center;
-        font-size: 4.5rem;
+        font-size: 5rem;
         position: relative;
     }
     .image-part img {

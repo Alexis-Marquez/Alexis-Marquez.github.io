@@ -15,14 +15,9 @@
     </div>
     <div class="about-me-section-body">
         <div class="about-me-section-text">
-            I’m a computer science student at the University of Texas at El Paso, graduating in May 2025.
-            <br><br>
-            I discovered my passion for coding in high school while competing in FTC robotics competitions, where I learned how to turn ideas into reality through teamwork and problem-solving. As a first-generation college student who has lived in two different countries, my journey has shaped my curiosity, resilience, and creativity in unique ways.
-            <br><br>
-            Beyond coding, I’m passionate about art—music, drawing, and storytelling—and I find history endlessly fascinating. These interests inspire my perspective on innovation and fuel my approach to solving challenges.
-            <br><br>
-            Feel free to explore my projects below, and don’t hesitate to reach out—I’m always excited to connect and create something meaningful together.
-
+            <p>I’m a computer science graduate passionate about building practical, reliable software that makes a difference. From security tools to personal finance apps and multiplayer games, I focus on creating projects that are intuitive, useful, and meaningful for people.</p>
+            <p>I’m driven by curiosity, creativity, and a love for technology’s potential to solve real-world problems. Outside of coding, you’ll find me exploring music, art, storytelling, and history; always looking for fresh perspectives to bring into my work.</p>
+            <p>Let’s connect and create something impactful together.</p>
 
         </div>
         <SkillsList></SkillsList>
@@ -44,6 +39,7 @@
     }
     .about-me-photo{
         width: 50%;
+        max-width: 600px;
         display: flex;
         justify-content: center;
     }
@@ -69,6 +65,8 @@
         margin: auto;
         text-align: center;
         font-size: 1.5rem;
+        line-height: 2.2rem;
+        max-width: 1200px;
     }
     @media (max-width: 768px) {
         .about-me-title{
