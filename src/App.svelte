@@ -11,7 +11,7 @@
 <div class="container">
   <NavBar></NavBar>
   <IntroSection></IntroSection>
-  <AboutMeSection></AboutMeSection>
   <ProjectsSection></ProjectsSection>
+  <AboutMeSection></AboutMeSection>
 </div>
 </main>

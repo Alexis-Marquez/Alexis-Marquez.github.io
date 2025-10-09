@@ -21,7 +21,7 @@
     }
 </script>
 
-<div use:opacityScroll={{ scrollFactor: 0.7, scrollOffset: window.innerHeight*5}} id="projects_section">
+<div id="projects_section">
     <div class="projects-section-header">
         <h1 class="projects-title">Projects</h1>
     </div>
@@ -41,7 +41,7 @@
                         tech= {["JavaScript", "Node", "Express", "MongoDB"]}
                         images = {["./screenshots/Places.png", "./screenshots/Places1.png"]}></ProjectSection>
     </div>
-    <div class="plannedProjectsSectionButton">
+    <!-- <div class="plannedProjectsSectionButton">
     <button class="planned-projects" onclick={togglePlanned}>
         {showPlanned ? "Hide Planned Projects ⌃" : "Show Planned Projects ⌵"}
     </button>
@@ -51,21 +51,25 @@
     <ProjectSection  title="Job Application tracker" subtitle="Full Stack Web Development" description={["Coming soon"]} tech= {["Python", "Flask", "SQL Lite", "SvelteKit"]} planned={true}>
     </ProjectSection>
         </div>
-    {/if}
+    {/if} -->
 </div>
 
 <style>
     #projects_section {
-        width: 90%;
-        margin: auto;
+        background: #e5e7eb;
     }
     .projects-title {
-        color: #4ECDC4;
+        color: #163d3b;
         text-align: center;
+    }
+    .projects-section-content{
+        margin-left: 10px;
+         margin-right: 10px;
+         color: #163d3b;
     }
     .projects-title{
         font-size: 5rem;
-        color: #4ECDC4;
+        color: #184441;
         margin: 3vh;
     }
     .projects-section-header{

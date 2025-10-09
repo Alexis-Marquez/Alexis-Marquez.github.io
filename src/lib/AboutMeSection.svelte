@@ -3,12 +3,8 @@
     import {opacityScroll} from "./opacityScroll.ts";
 </script>
 
-<div use:opacityScroll={{ scrollFactor: 0.7, scrollOffset: window.innerHeight*1.8}} id="about-me-section">
-    <hr class="sep-line">
+<div  id="about-me-section">
     <div class="about-me-section-header">
-        <div class="about-me-photo">
-            <img class="profile-photo" src="./PXL_20250308_202533335.PORTRAIT~3.jpg" alt="Profile photo"/>
-        </div>
         <div class="About-me-section-title">
     <h1 class="about-me-title">About Me</h1>
         </div>
@@ -26,8 +22,11 @@
 
 <style>
     #about-me-section {
-        width: 90%;
+        padding-top: 2vh;
         margin: auto;
+        background: #1F2937;
+       clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 0 100%);
+
     }
     .profile-photo{
         width: 50%;
