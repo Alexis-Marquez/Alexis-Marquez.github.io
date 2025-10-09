@@ -76,25 +76,6 @@
         display: flex;
         justify-content: flex-start;
     }
-    .planned-projects{
-        color: #4ECDC4;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        font-size: xx-large;
-        background: transparent;
-        border: none;
-    }
-    .planned-projects:hover {
-        color: #e5e7eb;
-    }
-    .plannedProjectsSectionButton{
-        display: flex;
-        justify-content: center;
-    }
-    .planned-projects{
-        margin-bottom: 5vh;
-    }
     @media (max-width: 768px){
         .projects-title{
             font-size: 1.5rem;

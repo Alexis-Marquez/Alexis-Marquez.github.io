@@ -27,27 +27,7 @@
         background: #1F2937;
        clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 0 100%);
 
-    }
-    .profile-photo{
-        width: 50%;
-        margin-left: 0;
-        margin-bottom: 5%;
-        margin-top: 5%;
-        height: auto;
-        border-radius: 50%;
-    }
-    .about-me-photo{
-        width: 50%;
-        max-width: 600px;
-        display: flex;
-        justify-content: center;
-    }
-    .sep-line {
-        border: none;
-        border-top: 3px solid #ffffff;
-        width: 100%;
-        margin: 0;
-    }
+    } 
     .about-me-title{
         font-size: 5rem;
         color: #4ECDC4;
@@ -74,8 +54,6 @@
         .about-me-section-text{
             font-size: 1rem;
         }
-        .about-me-photo{
-            width: 100%
-        }
+
     }
 </style>
