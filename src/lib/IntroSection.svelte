@@ -84,7 +84,7 @@
         }
         .intro-main{
             flex-direction: column;
-            min-height: auto;
+            margin-top: 6vh;
         }
         .image-part img{
             width: 150px;
