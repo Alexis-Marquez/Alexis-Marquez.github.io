@@ -36,6 +36,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 50px;
     }
     .skills-lists{
         display: flex;

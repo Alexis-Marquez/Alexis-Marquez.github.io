@@ -37,6 +37,18 @@ automated CI/CD deployment."
 algorithms and feature engineering"
                         techlist= {["Python", "Scikit-learn", "Pandas", "NumPy"]}
                         imageUrl = "./screenshots/MLFootball.png"></ProjectSquare>
+        <ProjectSquare title=" Budgeting Full Stack App" subtitle="Fullstack Web Development" description="Full-stack budgeting application that allows users to track income and expenses, set financial goals, and visualize
+their budget through interactive charts and reports."
+                        techlist= {["Java", "Spring Boot", "React", "MongoDB", "CSS", "HTML", "Git"]}
+                        imageUrl = "./screenshots/budget.png"></ProjectSquare>
+        <ProjectSquare title="Personal Portfolio Website" subtitle="Frontend Web Development" description="A personal portfolio website built with SvelteKit, showcasing projects, skills, and contact information with a modern
+and responsive design."
+                        techlist= {["SvelteKit", "JavaScript", "CSS", "HTML"]}
+                        imageUrl = "./screenshots/portfolio.png"></ProjectSquare>
+        <ProjectSquare title="Places Review Site" subtitle="Full Stack Web Development" description="Full-stack web application that allows users to discover and review local places, featuring user authentication,
+dynamic content, and interactive maps."
+                        techlist= {["Node.js", "Express", "MongoDB", "EJS", "CSS", "HTML"]}
+                        imageUrl = "./screenshots/Places1.png"></ProjectSquare>
     </div>
     <!-- <div class="plannedProjectsSectionButton">
     <button class="planned-projects" onclick={togglePlanned}>
@@ -70,7 +82,8 @@ algorithms and feature engineering"
     }
     .projects-square-container{
         display: flex;
-        justify-content: space-evenly
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
     
     @media (max-width: 768px){

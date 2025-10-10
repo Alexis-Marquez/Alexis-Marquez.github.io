@@ -44,7 +44,8 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .project-image{
-        height: 50%;
+        object-fit: cover; 
+        height: 200px;
     }
     .project-image img {
         width: 100%;
