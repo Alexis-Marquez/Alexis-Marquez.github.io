@@ -43,9 +43,12 @@
         background-color: #2D3748;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+    .project-image{
+        height: 50%;
+    }
     .project-image img {
         width: 100%;
-        height: auto;
+        height: 100%;
         object-fit: cover;
     }
     .project-info {

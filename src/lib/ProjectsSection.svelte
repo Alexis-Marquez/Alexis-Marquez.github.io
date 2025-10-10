@@ -28,15 +28,15 @@
         <ProjectSquare title="TRACE Tool" subtitle= "Fullstack Web Development" description="Capstone project for the Department of Defense: a penetration testing tool integrating AI-driven
 reconnaissance, credential generation, and vulnerability scanning."
         techlist= {["Python", "JavaScript", "SvelteKit", "Neo4j", "Git", "FastAPI"]}
-                        imageUrl = "./screenshots/budget.png"></ProjectSquare>
+                        imageUrl = "./screenshots/TRACE.jpg"></ProjectSquare>
         <ProjectSquare title="Job Application Tracking Platform" subtitle="Fullstack Web Development" description="Full-stack job application tracking platform featuring user-specific data management, Dockerized services, and
 automated CI/CD deployment."
                         techlist= {["Django", "PostgreSQL", "React", "TypeScript", "Docker", "Jenkins"]}
                         imageUrl = "./screenshots/apptrack.png"></ProjectSquare>
-        <ProjectSquare title="ML Football Play Predictor" subtitle="Full Stack Web Development" description="Machine learning tool that predicts optimal football play calls from game situations using classification
+        <ProjectSquare title="ML Football Play Predictor" subtitle="Machine Learning" description="Machine learning tool that predicts optimal football play calls from game situations using classification
 algorithms and feature engineering"
-                        techlist= {["JavaScript", "Node", "Express", "MongoDB"]}
-                        imageUrl = "./screenshots/Places.png"></ProjectSquare>
+                        techlist= {["Python", "Scikit-learn", "Pandas", "NumPy"]}
+                        imageUrl = "./screenshots/MLFootball.png"></ProjectSquare>
     </div>
     <!-- <div class="plannedProjectsSectionButton">
     <button class="planned-projects" onclick={togglePlanned}>
