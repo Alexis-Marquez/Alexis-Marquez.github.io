@@ -21,9 +21,16 @@
         </div>
         <p class="project-description">{description}</p>
         <div class="project-links">
-            {#if githubUrl}
-                <a href="{githubUrl}" target="_blank" rel="noopener noreferrer">GitHub</a>
+           {#if githubUrl}
+            <a href="{githubUrl}" target="_blank" rel="noopener noreferrer">
+                <img
+                src="./github-mark-white.png"
+                alt="GitHub Logo"
+                class="logo"
+                >
+            </a>
             {/if}
+
             {#if liveUrl}
                 <a href="{liveUrl}" target="_blank" rel="noopener noreferrer">Live Demo</a>
             {/if}
@@ -42,6 +49,7 @@
         margin: 1rem 0;
         background-color: #2D3748;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: 500px;
     }
     .project-image{
         object-fit: cover; 
@@ -57,11 +65,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+        height: 100%; 
     }
     .project-title {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         color: #4ECDC4;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
     }
     .project-tech {
         display: flex;
@@ -80,16 +90,20 @@
     .project-description {
         font-size: 1rem;
         color: #E5E7EB;
-        margin-bottom: 0.5rem;
     }
     .project-links a {
-        margin-right: 1rem;
         color: #4ECDC4;
         text-decoration: none;
         font-weight: bold;
+        gap: 0.5rem;
     }
     .project-links a:hover {
         text-decoration: underline;
+    }
+    .logo{
+        width:35px; 
+        height:35px; 
+        vertical-align:middle;
     }
     @media (max-width: 768px) {
         .project-square {

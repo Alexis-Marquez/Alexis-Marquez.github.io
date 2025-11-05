@@ -32,23 +32,23 @@ reconnaissance, credential generation, and vulnerability scanning."
         <ProjectSquare title="Job Application Tracking Platform" subtitle="Fullstack Web Development" description="Full-stack job application tracking platform featuring user-specific data management, Dockerized services, and
 automated CI/CD deployment."
                         techlist= {["Django", "PostgreSQL", "React", "TypeScript", "Docker", "Jenkins"]}
-                        imageUrl = "./screenshots/apptrack.png"></ProjectSquare>
+                        imageUrl = "./screenshots/apptrack.png" githubUrl="https://github.com/Alexis-Marquez/JobAppTracker"></ProjectSquare>
         <ProjectSquare title="ML Football Play Predictor" subtitle="Machine Learning" description="Machine learning tool that predicts optimal football play calls from game situations using classification
 algorithms and feature engineering"
                         techlist= {["Python", "Scikit-learn", "Pandas", "NumPy"]}
-                        imageUrl = "./screenshots/MLFootball.png"></ProjectSquare>
+                        imageUrl = "./screenshots/MLFootball.png" githubUrl="https://github.com/Alexis-Marquez/MLProjectNFL"></ProjectSquare>
         <ProjectSquare title=" Budgeting Full Stack App" subtitle="Fullstack Web Development" description="Full-stack budgeting application that allows users to track income and expenses, set financial goals, and visualize
 their budget through interactive charts and reports."
                         techlist= {["Java", "Spring Boot", "React", "MongoDB", "CSS", "HTML", "Git"]}
-                        imageUrl = "./screenshots/budget.png"></ProjectSquare>
+                        imageUrl = "./screenshots/budget.png" githubUrl="https://github.com/Alexis-Marquez/BudgetAppRef"></ProjectSquare>
         <ProjectSquare title="Personal Portfolio Website" subtitle="Frontend Web Development" description="A personal portfolio website built with SvelteKit, showcasing projects, skills, and contact information with a modern
 and responsive design."
                         techlist= {["SvelteKit", "JavaScript", "CSS", "HTML"]}
-                        imageUrl = "./screenshots/portfolio.png"></ProjectSquare>
+                        imageUrl = "./screenshots/portfolio.png" githubUrl="https://github.com/Alexis-Marquez/Alexis-Marquez.github.io"></ProjectSquare>
         <ProjectSquare title="Places Review Site" subtitle="Full Stack Web Development" description="Full-stack web application that allows users to discover and review local places, featuring user authentication,
 dynamic content, and interactive maps."
                         techlist= {["Node.js", "Express", "MongoDB", "EJS", "CSS", "HTML"]}
-                        imageUrl = "./screenshots/Places1.png"></ProjectSquare>
+                        imageUrl = "./screenshots/Places1.png" githubUrl="https://github.com/Alexis-Marquez/ReviewApp"></ProjectSquare>
     </div>
     <!-- <div class="plannedProjectsSectionButton">
     <button class="planned-projects" onclick={togglePlanned}>
