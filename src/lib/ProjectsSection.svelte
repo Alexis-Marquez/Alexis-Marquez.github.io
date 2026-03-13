@@ -32,7 +32,8 @@ reconnaissance, credential generation, and vulnerability scanning."
         <ProjectSquare title="Job Application Tracking Platform" subtitle="Fullstack Web Development" description="Full-stack job application tracking platform featuring user-specific data management, Dockerized services, and
 automated CI/CD deployment."
                         techlist= {["Django", "PostgreSQL", "React", "TypeScript", "Docker", "Jenkins"]}
-                        imageUrl = "./screenshots/apptrack.png" githubUrl="https://github.com/Alexis-Marquez/JobAppTracker"></ProjectSquare>
+                        imageUrl = "./screenshots/apptrack1.png" githubUrl="https://github.com/Alexis-Marquez/JobAppTracker" 
+                        liveUrl="https://jobbtrack.netlify.app/"></ProjectSquare>
         <ProjectSquare title="ML Football Play Predictor" subtitle="Machine Learning" description="Machine learning tool that predicts optimal football play calls from game situations using classification
 algorithms and feature engineering"
                         techlist= {["Python", "Scikit-learn", "Pandas", "NumPy"]}
